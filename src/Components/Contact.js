@@ -64,10 +64,7 @@ class Contact extends Component {
       this.setState({ 
          isLoading: true
       })
-      console.log('===> Debug0: ')
-      console.log('===> Debug1: ', process.env.REACT_APP_EMAIL_SERVICE_ID,process.env.REACT_APP_EMAIL_TEMPLATE_ID, this.state.contact)
       try {
-         console.log('===> Debug2: ', process.env.REACT_APP_EMAIL_SERVICE_ID,process.env.REACT_APP_EMAIL_TEMPLATE_ID, this.state.contact)
          emailjs.send(process.env.REACT_APP_EMAIL_SERVICE_ID,process.env.REACT_APP_EMAIL_TEMPLATE_ID, this.state.contact);
          this.setState({ 
             isLoading: false,
