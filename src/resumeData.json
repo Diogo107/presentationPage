@@ -1,0 +1,142 @@
+{
+    "main": {
+        "name": "Diogo Santos",
+        "occupation": "developer",
+        "description": "Focused in growing ideas while learning along the way.",
+        "image": "profilepic.jpg",
+        "bio": "I have a background teaching math and science which developed in web development interest, so I decided to embrace web development and take a turn in my life. Web development is where I finaly found my passion being able to create and grow the most diversified ideas.",
+        "contactmessage": "If you have an idea or a project in mind let's get in touch.",
+        "email": "diogo.filipe.santos107@gmail.com",
+        "phone": "925 009 051",
+        "address": {
+            "street": "(Your Street)",
+            "city": "Lisbon",
+            "state": "Portugal",
+            "country": "Portugal",
+            "zip": "(Your Zip/Postal Code)"
+        },
+        "website": "http://www.diogo-santos.com",
+        "resumedownload": "./../Attachments/Diogo Santos CV.pdf",
+        "social": [
+            {
+            "name": "linkedin",
+            "url": "https://www.linkedin.com/in/diogo-santos-a5576b19a/",
+            "className": "fa fa-linkedin"
+            },
+            {
+                "name": "github",
+                "url": "https://github.com/Diogo107",
+                "className": "fa fa-github"
+            },
+            {
+                "name": "instagram",
+                "url": "https://www.instagram.com/di.santos107",
+                "className": "fa fa-instagram"
+            },
+            {
+                "name": "facebook",
+                "url": "https://www.facebook.com/diogo.santos.37201",
+                "className": "fa fa-facebook"
+            }
+        ]
+    },
+    "resume": {
+        "skillmessage": "Here's some of mine main strengths",
+        "education": [
+            {
+                "school": "Bootcamp",
+                "degree": "Fullstack Developer",
+                "graduated": "March 2020",
+                "description": "Frontend with mostly React.js and Backend on Node.js"
+            },
+            {
+                "school": "University",
+                "degree": "Degree in Marketing, Advertisement and Public Relations",
+                "graduated": "June 2017",
+                "description": "Economics, accounting, product development"
+            }
+        ],
+        "work": [
+            {
+                "company": "The Storefront",
+                "title": "Senior Growth Engineer",
+                "years": "October 2020 - Present",
+                "description": "Develope new features, with critical thinking and user focused, while tracking it's usage and success in order to develop the product."
+            },
+            {
+                "company": "Lumit.io",
+                "title": "Freelancer",
+                "years": "March 2021 - Present",
+                "description": "Develop frontend features for data analysis based on IoT."
+            }
+        ],
+        "skills": [
+            {
+                "name": "ReactJs",
+                "level": "90%"
+            },
+            {
+                "name": "Javascript",
+                "level": "90%"
+            },
+            {
+                "name": "CSS",
+                "level": "80%"
+            },
+            {
+                "name": "HTML5",
+                "level": "80%"
+            },
+            {
+                "name": "Git",
+                "level": "60%"
+            },
+            {
+                "name": "MongoDB",
+                "level": "70%"
+            },
+            {
+                "name": "Photoshop",
+                "level": "50%"
+            },
+            {
+                "name": "NodeJs",
+                "level": "75%"
+            }
+        ]
+    },
+    "portfolio": {
+        "projects": [
+            {
+                "title": "Equalizer",
+                "category": "Winner of a hackathon on Gender Equality",
+                "image": "equalizer.png",
+                "url": "https://worldequalizer.herokuapp.com/"
+            },
+            {
+                "title": "HomeSweetHome",
+                "category": "Condominium Management",
+                "image": "home_sweet_home.png",
+                "url": "https://h-sweet-home.herokuapp.com/"
+            },
+            {
+                "title": "Cave Game",
+                "category": "Simple Game in Javascript and Canvas",
+                "image": "cave_game.png",
+                "url": "https://cave-game-test.netlify.app/"
+            }
+        ]
+    },
+    "testimonials": {
+        "testimonials": [
+            {
+                "text": "Problem solving thinking and very flexible soluctions.",
+                "user": "Bernardo Tavares"
+            },
+            {
+                "text": "Always available and friendly guy. An easy to work with person and always surprising me with the way we overcomes his challenges.",
+                "user": "Gonçalo"
+            }
+        ]
+    }
+}

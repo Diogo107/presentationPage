@@ -1,0 +1,20 @@
+.last__contribution--item {
+    border-bottom: 1px solid white;
+    a {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        img {
+            width: 45px;
+            height: 45px;
+            margin: 0;
+            margin-right: 8px;
+        }
+        h6 {
+            color: white;
+        }
+        p {
+            color: #808080
+        }
+    }
+}
