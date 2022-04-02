@@ -13,8 +13,6 @@ import CssIcon from './../Attachments/css.png'
 import VueIcon from './../Attachments/vue.png'
 import ReactIcon from './../Attachments/react.png'
 init("h-Rx03CSW9Byu440m");
-console.log(process.env)
-console.log(process.env.REACT_APP_BASE_URL)
 
 const override = css`
    display: block;
@@ -66,9 +64,8 @@ class Contact extends Component {
       this.setState({ 
          isLoading: true
       })
-      e.preventDefault();
       try {
-         await emailjs.send("service_0hmroxt","template_fq304hi", this.state.contact);
+         emailjs.send(process.env.REACT_APP_EMAIL_SERVICE_ID,process.env.REACT_APP_EMAIL_TEMPLATE_ID, this.state.contact);
          this.setState({ 
             isLoading: false,
             successfulSent: true,
@@ -169,7 +166,7 @@ class Contact extends Component {
                         {this.state.isLoading ?
                            <SyncLoader css={override} size={15} color={"#F06000"} loading={this.state.isLoading} speedMultiplier={0.75} />
                         :
-                           <button className="submit" onClick={(e) => this.sendEmail(e)} disabled={!this.state.contact.email.length || !this.state.contact.message.length}>Submit</button>
+                           <button className="submit" type='button' onClick={(e) => this.sendEmail(e)} disabled={!this.state.contact.email.length || !this.state.contact.message.length}>Submit</button>
                         }
                         </div>
                      </fieldset>
@@ -203,7 +200,7 @@ class Contact extends Component {
                   <GitHubCalendar username="diogo107" blockSize={21} color={'#F06000'} transformData={selectLastHalfYear} />
                   
                   <ul id="twitter">
-                     {this.state.lastProjects.map(e => {
+                     {this.state.lastProjects.map( (e, index) => {
                         let icon
                         switch (e.language) {
                            case 'CSS':
@@ -223,7 +220,7 @@ class Contact extends Component {
                               break
                         }
                         return (
-                           <li className='last__contribution--item'>
+                           <li key={index} className='last__contribution--item'>
                               <a href={e.html_url} >
                                  <img src={icon} alt={e.language} />
                                  <span>

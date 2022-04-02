@@ -884,7 +884,7 @@ call-to-action .button {
    color: #0D0D0D;
 	background: #fff;
 }
-#contact button.submit:hover {
+#contact button.submit:disabled {
    cursor: no-drop;
 }
 #contact span.required {
