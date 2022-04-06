@@ -172,6 +172,10 @@ class Contact extends Component {
                         }
                         </div>
                      </fieldset>
+                     <ReCAPTCHA
+                        sitekey={process.env.REACT_APP_GOOGLE_API_KEY}
+                        onChange={ (e) => console.log('===> e: ', e )}
+                     />
 				      </form>
                }
                {this.state.errorMessage && 
@@ -182,10 +186,7 @@ class Contact extends Component {
                      <i className="fa fa-check"></i>Your message was sent, thank you!<br />
                   </div>
                }
-               <ReCAPTCHA
-                  sitekey={process.env.REACT_APP_GOOGLE_API_KEY}
-                  onChange={ (e) => console.log('===> e: ', e )}
-               />
+               
            </div>
 
 
