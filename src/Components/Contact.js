@@ -13,7 +13,7 @@ import CssIcon from './../Attachments/css.png'
 import VueIcon from './../Attachments/vue.png'
 import ReactIcon from './../Attachments/react.png'
 // Import Services
-import ReCAPTCHA from "react-google-recaptcha";
+import { GoogleReCaptchaProvider, GoogleReCaptcha } from 'react-google-recaptcha-v3';
 init("h-Rx03CSW9Byu440m");
 
 const override = css`
@@ -172,10 +172,9 @@ class Contact extends Component {
                         }
                         </div>
                      </fieldset>
-                     <ReCAPTCHA
-                        sitekey={"6LcsG1AfAAAAABrNMOXNd7n_lKyZ76PNq3NB6THR"}
-                        onChange={ (e) => console.log('===> e: ', e )}
-                     />
+                     <GoogleReCaptchaProvider reCaptchaKey={process.env.REACT_APP_GOOGLE_API_KEY}>
+                        <GoogleReCaptcha onVerify={ (e) => console.log(e)} />
+                     </GoogleReCaptchaProvider>
 				      </form>
                }
                {this.state.errorMessage && 
