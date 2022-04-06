@@ -12,6 +12,8 @@ import HtmlIcon from './../Attachments/html.png'
 import CssIcon from './../Attachments/css.png'
 import VueIcon from './../Attachments/vue.png'
 import ReactIcon from './../Attachments/react.png'
+// Import Services
+import ReCAPTCHA from "react-google-recaptcha";
 init("h-Rx03CSW9Byu440m");
 
 const override = css`
@@ -180,6 +182,10 @@ class Contact extends Component {
                      <i className="fa fa-check"></i>Your message was sent, thank you!<br />
                   </div>
                }
+               <ReCAPTCHA
+                  sitekey={process.env.REACT_APP_GOOGLE_API_KEY}
+                  onChange={ (e) => console.log('===> e: ', e )}
+               />
            </div>
 
 
