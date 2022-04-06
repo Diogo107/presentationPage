@@ -173,7 +173,7 @@ class Contact extends Component {
                         </div>
                      </fieldset>
                      <ReCAPTCHA
-                        sitekey={process.env.REACT_APP_GOOGLE_API_KEY}
+                        sitekey={"6LcsG1AfAAAAABrNMOXNd7n_lKyZ76PNq3NB6THR"}
                         onChange={ (e) => console.log('===> e: ', e )}
                      />
 				      </form>
